@@ -1,0 +1,24 @@
+/* src/tabs.css */
+.tab {
+    height: auto;
+    display: flex ;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    bottom: 0px;
+  }
+  
+  .tab:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tab.react-tabs__tab--selected {
+    background-color: rgb(161, 37, 250);
+    border-bottom-color: transparent;
+    color: white;
+    font-weight: 700;
+  }
