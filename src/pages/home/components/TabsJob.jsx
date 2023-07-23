@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JobtabsCard = () => {
+const TabsJob = () => {
     return (
         <div className='flex flex-col sm:flex-row justify-between px-2  border rounded items-center'>
             <div className='flex sm:flex-row w-full flex-col items-start sm:items-center  gap-4  capitalize text-gray-700 p-2'>
@@ -19,4 +19,4 @@ const JobtabsCard = () => {
     );
 };
 
-export default JobtabsCard;
+export default TabsJob;
