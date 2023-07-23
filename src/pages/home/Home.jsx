@@ -1,12 +1,12 @@
 import TopItCompany from "./components/TopItCompany";
-import Welcome from "./components/welcome";
 import TabsJob from "./components/TabsJob";
+import WelcomeHome from "./components/WelcomeHome";
 
 const Home = () => {
     let arr = [21, 3, , 4,]
     return (
         <>
-            <Welcome></Welcome>
+            <WelcomeHome></WelcomeHome>
             <div className="md:w-3/4 lg:w-2/3 sm:w-4/5 w-5/6  mx-auto">
                 <TabsJob></TabsJob>
                 <div className="grid grid-cols-6 gap-2 mb-3">

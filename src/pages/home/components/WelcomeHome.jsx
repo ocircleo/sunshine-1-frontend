@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Welcome = () => {
+const WelcomeHome = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 bg-blue-200 min-h-[25rem] px-2 md:px-12'>
             <div className='p-3 text-left col-span-1 flex items-start gap-4 justify-center flex-col'>
@@ -10,7 +10,7 @@ const Welcome = () => {
             </div>
 
             <form className='col-span-1 flex items-center flex-col justify-center flex-wrap  gap-2'>
-                
+
                 <input type="text" placeholder="Type here" className="input flex-shrink-0 input-bordered w-full max-w-xs" />
                 <select className="select select-bordered w-full max-w-xs flex-shrink-0">
                     <option disabled selected>Who shot first?</option>
@@ -30,4 +30,4 @@ const Welcome = () => {
     );
 };
 
-export default Welcome;
+export default WelcomeHome;
