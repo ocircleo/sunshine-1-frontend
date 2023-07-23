@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
         <div className='md:w-3/4 lg:w-2/3 sm:w-4/5 w-5/6  mx-auto'>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Login now!</h1>
@@ -29,6 +30,7 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
+                            <Link to={'/register'} className='text-sm underline'>Dont have an acount ? Register ?</Link>
                         </div>
                     </div>
                 </div>

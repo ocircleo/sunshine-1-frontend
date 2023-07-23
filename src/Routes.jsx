@@ -5,6 +5,7 @@ import Errorpge from "./Errorpge";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/About/About";
 import Login from "./pages/shared/login/Login";
+import Register from "./pages/shared/register/Register";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
       }, {
         path: 'login',
         element: <Login></Login>
+      }, {
+        path: "register",
+        element: <Register></Register>
       }
     ],
   },
