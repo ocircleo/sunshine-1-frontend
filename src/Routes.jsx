@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Errorpge from "./Errorpge";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/About/About";
+import Login from "./pages/shared/login/Login";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,9 @@ const router = createBrowserRouter([
       }, {
         path: 'about',
         element: <About></About>
+      }, {
+        path: 'login',
+        element: <Login></Login>
       }
     ],
   },
