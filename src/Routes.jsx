@@ -10,6 +10,7 @@ import Acount from "./pages/acount/Acount";
 import AcountHome from "./pages/acount/AcountHome";
 import MyApplication from "./pages/acount/MyApplication";
 import Serch from "./pages/serch/Serch";
+import Seemore from "./pages/shared/seemore/Seemore";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,12 @@ const router = createBrowserRouter([
         path: 'serch/:type/:keyword',
         element: <Serch></Serch>,
         loader: (req) => fetch(`https://sunshine-phi.vercel.app/serch?type=${req.params.type}&keyword=${req.params?.keyword}`)
-      
+
+      }, {
+        path: 'seemore/:id',
+        element: <Seemore></Seemore>,
+        loader: (req) => fetch(`http://localhost:1111/detaill/${req.params.id}`)
+
       }
     ],
   }, {

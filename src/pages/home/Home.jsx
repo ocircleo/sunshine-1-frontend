@@ -5,12 +5,11 @@ import { useEffect, useState } from "react";
 
 
 const Home = () => {
-    let arr = [21, 3, , 4,]
     let [bangladesh, setBangladesh] = useState([])
     let [international, setInternational] = useState([])
     useEffect(() => {
-        fetch('http://localhost:1111/topcompanys/bd/3').then(res => res.json()).then(data => setBangladesh(data))
-        fetch('http://localhost:1111/topcompanys/in/3').then(res => res.json()).then(data => setInternational(data))
+        fetch('https://sunshine-phi.vercel.app/topcompanys/bd/3').then(res => res.json()).then(data => setBangladesh(data))
+        fetch('https://sunshine-phi.vercel.app/topcompanys/in/3').then(res => res.json()).then(data => setInternational(data))
     }, [])
     return (
         <>
