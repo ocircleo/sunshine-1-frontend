@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       }, {
         path: 'seemore/:id',
         element: <Seemore></Seemore>,
-        loader: (req) => fetch(`http://localhost:1111/detaill/${req.params.id}`)
+        loader: (req) => fetch(`https://sunshine-phi.vercel.app/detaill/${req.params.id}`)
 
       }
     ],
