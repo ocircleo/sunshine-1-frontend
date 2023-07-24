@@ -6,6 +6,10 @@ import Contact from "./pages/contact/Contact";
 import About from "./pages/About/About";
 import Login from "./pages/shared/login/Login";
 import Register from "./pages/shared/register/Register";
+import Acount from "./pages/acount/Acount";
+import AcountHome from "./pages/acount/AcountHome";
+import MyApplication from "./pages/acount/MyApplication";
+import Serch from "./pages/serch/Serch";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +32,26 @@ const router = createBrowserRouter([
       }, {
         path: "register",
         element: <Register></Register>
+      }, {
+        path: 'serch',
+        element: <Serch></Serch>,
+        loader: (params) => fetch('/jobs.json')
       }
     ],
-  },
+  }, {
+    path: 'a',
+    element: <Acount></Acount>,
+    errorElement: <Errorpge></Errorpge>,
+    children: [
+      {
+        path: "acount",
+        element: <AcountHome></AcountHome>
+      },
+      {
+        path: "application",
+        element: <MyApplication></MyApplication>
+      }
+    ]
+  }
 ]);
 export default router;

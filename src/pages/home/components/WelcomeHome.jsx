@@ -1,6 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const WelcomeHome = () => {
+    const navigate = useNavigate()
+    const serch = (e) => {
+        e.preventDefault()
+        const name = e.target.serch.value,
+            option = e.target.option.value;
+        console.log(name, option.value);
+        navigate(`serch?keyword=${name}&option=${option}`)
+    }
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 bg-blue-200 min-h-[25rem] px-2 md:px-12'>
             <div className='p-3 text-left col-span-1 flex items-start gap-4 justify-center flex-col'>
@@ -9,18 +18,14 @@ const WelcomeHome = () => {
                 <button className='btn btn-primary'>See all jobs</button>
             </div>
 
-            <form className='col-span-1 flex items-center flex-col justify-center flex-wrap  gap-2'>
+            <form onSubmit={serch} className='col-span-1 flex items-center flex-col justify-center flex-wrap  gap-2'>
 
-                <input type="text" placeholder="Type here" className="input flex-shrink-0 input-bordered w-full max-w-xs" />
-                <select className="select select-bordered w-full max-w-xs flex-shrink-0">
-                    <option disabled selected>Who shot first?</option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
-                </select>
-                <select className="select select-bordered w-full max-w-xs flex-shrink-0">
-                    <option disabled selected>Who shot first?</option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
+                <input type="text" name='serch' placeholder="Type here" required className="input flex-shrink-0 input-bordered w-full max-w-xs" />
+                <select className="select select-bordered w-full max-w-xs flex-shrink-0" name='option'>
+                    <option disabled selected value={'react'}>React devloper</option>
+                    <option value={'frontend'}>Frontend Devloper</option>
+                    <option value={'backend'}>Backend Devloper</option>
+                    <option value={'fullstack'}>Full stack devloper</option>
                 </select>
                 <button className='btn btn-primary flex-shrink-0'>serch</button>
 
