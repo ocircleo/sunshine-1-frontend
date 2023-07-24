@@ -1,13 +1,17 @@
 import TopItCompany from "./components/TopItCompany";
 import WelcomeHome from "./components/WelcomeHome";
 import ReactTab from "./components/ReactTab";
-import { useContext } from "react";
-import { contextProvier } from "../../private/provider/Provider";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 
 const Home = () => {
     let arr = [21, 3, , 4,]
-    const navigate = useNavigate()
+    let [bangladesh, setBangladesh] = useState([])
+    let [international, setInternational] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:1111/topcompanys/bd/3').then(res => res.json()).then(data => setBangladesh(data))
+        fetch('http://localhost:1111/topcompanys/in/3').then(res => res.json()).then(data => setInternational(data))
+    }, [])
     return (
         <>
             <WelcomeHome></WelcomeHome>
@@ -22,12 +26,12 @@ const Home = () => {
                     <p className="col-span-6 font-semibold">In Bangladesh</p>
 
                     {
-                        arr.map(ele => <TopItCompany></TopItCompany>)
+                        bangladesh.map(ele => <TopItCompany key={ele._id} data={ele}></TopItCompany>)
                     }
                     <p className="col-span-6 font-semibold">World Wide</p>
 
                     {
-                        arr.map(ele => <TopItCompany></TopItCompany>)
+                        international.map(ele => <TopItCompany key={ele._id} data={ele}></TopItCompany>)
                     }
 
                 </div>
