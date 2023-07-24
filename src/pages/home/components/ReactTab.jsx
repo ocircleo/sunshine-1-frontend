@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './jobstabs.css'
 import { Link } from "react-router-dom";
 import TabsJob from './TabsJob';
-let aaa = [1, 2, 3, 5, 6, 3]
+import { data } from 'autoprefixer';
+
 const ReactTab = () => {
+    const [fresher, setFresher] = useState([])
+    const [experienced, setExperienced] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:1111/job/Experienced').then(res => res.json()).then(data => setExperienced(data))
+        fetch('http://localhost:1111/job/Fresher').then(res => res.json()).then(data => setFresher(data))
+    }, [])
     return (
         <div className='mb-4'>
             <Tabs>
@@ -17,7 +24,7 @@ const ReactTab = () => {
                 <TabPanel>
                     <div className='min-h-[10rem] w-full  grid gap-2'>
                         {
-                            aaa.map(ele => <TabsJob></TabsJob>)
+                            fresher.map(ele => <TabsJob key={ele._id} data={ele}></TabsJob>)
                         }
                     </div>
                     <div className='text-center my-3'><Link className='btn btn-primary capitalize'>see all</Link></div>
@@ -25,7 +32,7 @@ const ReactTab = () => {
                 <TabPanel>
                     <div className='min-h-[10rem] w-full  grid  gap-2'>
                         {
-                            aaa.map(ele => <TabsJob></TabsJob>)
+                            experienced.map(ele => <TabsJob key={ele._id} data={ele}></TabsJob>)
                         }
                     </div>
                     <div className='text-center my-3'><Link className='btn btn-primary capitalize'>see all</Link></div>

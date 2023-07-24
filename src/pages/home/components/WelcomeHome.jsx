@@ -8,7 +8,8 @@ const WelcomeHome = () => {
         const name = e.target.serch.value,
             option = e.target.option.value;
         console.log(name, option.value);
-        navigate(`serch?keyword=${name}&option=${option}`)
+        navigate(`/serch/${option}/${name}`)
+        // navigate(`/serch/type=${option}&keyword=${name}`)
     }
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 bg-blue-200 min-h-[25rem] px-2 md:px-12'>
@@ -22,10 +23,9 @@ const WelcomeHome = () => {
 
                 <input type="text" name='serch' placeholder="Type here" required className="input flex-shrink-0 input-bordered w-full max-w-xs" />
                 <select className="select select-bordered w-full max-w-xs flex-shrink-0" name='option'>
-                    <option disabled selected value={'react'}>React devloper</option>
-                    <option value={'frontend'}>Frontend Devloper</option>
-                    <option value={'backend'}>Backend Devloper</option>
-                    <option value={'fullstack'}>Full stack devloper</option>
+                    <option disabled selected value={'Fresher'}>Fresher</option>
+                    <option value={'Experienced'}>Experienced</option>
+
                 </select>
                 <button className='btn btn-primary flex-shrink-0'>serch</button>
 

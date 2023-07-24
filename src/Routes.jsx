@@ -33,9 +33,10 @@ const router = createBrowserRouter([
         path: "register",
         element: <Register></Register>
       }, {
-        path: 'serch',
+        path: 'serch/:type/:keyword',
         element: <Serch></Serch>,
-        loader: (params) => fetch('/jobs.json')
+        loader: (req) => fetch(`http://localhost:1111/serch?type=${req.params.type}&keyword=${req.params?.keyword}`)
+      
       }
     ],
   }, {

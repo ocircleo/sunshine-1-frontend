@@ -1,72 +1,74 @@
 [
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    },
-    {
-        "position": "webdevloper",
-        "company": "salman",
-        "location": "dhaka,bangladesh",
-        "img": "ddd",
-        "companyImg": "ddddd"
-    }
+  {
+    "company": "TechCo",
+    "job_title": "MERN Devloper",
+    "location": "San Francisco, CA",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "InnovateTech",
+    "job_title": "Full Stack Developer",
+    "location": "New York, NY",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "CodeMasters",
+    "job_title": "Frontend Developer",
+    "location": "Seattle, WA",
+    "job_type": "Fresher"
+  },
+  {
+    "company": "DataTech Solutions",
+    "job_title": "React Devloper",
+    "location": "Chicago, IL",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "CyberSecure",
+    "job_title": "Backend Devloper",
+    "location": "Washington, D.C.",
+    "job_type": "Fresher"
+  },
+  {
+    "company": "AppGenius",
+    "job_title": "Web Developer",
+    "location": "Los Angeles, CA",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "CloudExperts",
+    "job_title": "Web Developer",
+    "location": "Austin, TX",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "AI Innovations",
+    "job_title": "React Devloper",
+    "location": "Boston, MA",
+    "job_type": "Fresher"
+  },
+  {
+    "company": "WebWizards",
+    "job_title": "Web Developer",
+    "location": "Denver, CO",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "E-Commerce Solutions",
+    "job_title": "E-Commerce Developer",
+    "location": "Miami, FL",
+    "job_type": "Fresher"
+  },
+  {
+    "company": "GameTech Studios",
+    "job_title": "React Devloper",
+    "location": "San Diego, CA",
+    "job_type": "Experienced"
+  },
+  {
+    "company": "Blockchain Systems",
+    "job_title": "MERN Devloper",
+    "location": "Dallas, TX",
+    "job_type": "Fresher"
+  }
 ]
