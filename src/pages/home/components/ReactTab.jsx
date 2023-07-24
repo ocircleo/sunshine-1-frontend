@@ -10,8 +10,8 @@ const ReactTab = () => {
     const [fresher, setFresher] = useState([])
     const [experienced, setExperienced] = useState([])
     useEffect(() => {
-        fetch('http://localhost:1111/job/Experienced').then(res => res.json()).then(data => setExperienced(data))
-        fetch('http://localhost:1111/job/Fresher').then(res => res.json()).then(data => setFresher(data))
+        fetch('https://sunshine-phi.vercel.app/job/Experienced').then(res => res.json()).then(data => setExperienced(data))
+        fetch('https://sunshine-phi.vercel.app/job/Fresher').then(res => res.json()).then(data => setFresher(data))
     }, [])
     return (
         <div className='mb-4'>

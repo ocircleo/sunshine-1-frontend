@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       }, {
         path: 'serch/:type/:keyword',
         element: <Serch></Serch>,
-        loader: (req) => fetch(`http://localhost:1111/serch?type=${req.params.type}&keyword=${req.params?.keyword}`)
+        loader: (req) => fetch(`https://sunshine-phi.vercel.app/serch?type=${req.params.type}&keyword=${req.params?.keyword}`)
       
       }
     ],
